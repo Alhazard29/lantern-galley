@@ -1,0 +1,35 @@
+/* The page around the game: a dark canal night, the canvas letterboxed at 16:9. */
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  background: #070d10;
+  overflow: hidden;
+}
+
+#stage {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#galley {
+  display: block;
+  width: min(100vw, calc(100vh * 16 / 9));
+  height: min(100vh, calc(100vw * 9 / 16));
+  background: #0c181d;
+  cursor: pointer;
+  outline: none;
+}
+
+noscript {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  color: #ffb347;
+  font: bold 20px "Trebuchet MS", sans-serif;
+}
